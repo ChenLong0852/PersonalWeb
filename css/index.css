@@ -1,0 +1,217 @@
+h1,h2,h3,h4,h5,h6,p,div,span,input,
+img,ul,li,ol,html,body,a,dl, dt, dd,
+header,main,footer,nav,section,address,button,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	padding: 0;
+	margin: 0;
+/*	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;*/
+	background: transparent;
+	font-family: 微软雅黑;
+	font-size: 10px;
+	/*border: 1px solid red;*/
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #151515;
+}
+
+h2:hover{
+	color: #151515;
+}
+
+/*导入字体*/
+@font-face{ 
+	font-family: 'ffftusj';
+	src: url('FFF_Tusj-webfont.eot');
+	src: url('FFF_Tusj-webfont.eot?iefix') format('eot'),
+	     url('FFF_Tusj-webfont.woff') format('woff'),
+	     url('FFF_Tusj-webfont.ttf') format('truetype'),
+	     url('FFF_Tusj-webfont.svg#webfont') format('svg');
+}
+
+.header>h1{
+	font-family: "ffftusj";
+}
+/*header开始*/
+header{
+	width: 100%;
+	height: 10rem;
+	background: #DBD9D9;
+}
+
+header h1{
+	font-size: 6.5rem;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+header h1 span{
+	font-size: 4rem;
+	font-family: normal;
+	color: #FFFFFF;
+}
+
+header p{
+	margin-top: -1rem;
+	font-size: 1.4rem;
+	text-align: right;
+	color: #4EB6EA;
+}
+
+/*main部分*/
+main{
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 1rem;
+}
+
+main section{
+	height: 15rem;
+	margin-bottom: 3rem;
+	background: #E0DEDE;
+	border-radius: 1rem;
+	border:2px solid  #468EF9;
+	margin-left: -2rem;
+}
+
+main section h2{
+	line-height: 4rem;
+	height: 4rem;
+	font-size: 2.5rem;
+	text-indent: 3rem;
+	background: #4A6F5D;
+	color: #FFFFFF;
+	border-radius: 0.8rem 0.8rem 0 0;
+	font-weight: normal;
+}
+
+.text{
+	font-size: 2rem;
+	text-indent: 2rem;
+}
+
+.aboutThis{
+	margin-bottom: 0rem;
+}
+
+
+/*固定导航*/
+.fixedNav{
+	position: fixed;
+	top: 10rem;
+	left: 3rem;
+}
+
+.fixedNav a{
+	display: block;
+	font-size: 2rem;
+	width: 10rem;
+	height: 4rem;
+	border: 1px solid #D8D8D8;
+	padding: 0.1rem 1rem;
+	text-align: center;
+	line-height: 4rem;
+	margin-bottom: 0.1rem;
+	color: #D3CC50;
+}
+
+.fixedNav a:hover{
+	color: #1D68F7;
+	background: #F1BA8E;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/*动态导航*/
+.dynamicNav{
+	position: fixed;
+	top: 34rem;
+	left: 3rem;
+}
+
+.dynamicNav a{
+	display: block;
+	font-size: 2rem;
+	width: 10rem;
+	height: 4rem;
+	border: 1px solid #D8D8D8;
+	padding: 0.1rem 1rem;
+	text-align: center;
+	line-height: 4rem;
+	margin-bottom: 0.1rem;
+	color: #B50A14;
+
+	-webkit-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	-webkit-perspective: 800px;
+	        perspective: 800px;
+	-webkit-perspective-origin: 50% 100px;
+	        perspective-origin: 50% 100px;
+}
+
+.dynamicNav a:hover{
+	color: #060606;
+	background: #51BF4F;
+	-webkit-transform:rotateX(360deg);
+	        transform:rotateX(360deg);
+	/*3D X Y变化单个元素会出现盲区，在旋转过程中可能会使鼠标不在元素上而返回，而返回之后又触碰到鼠标而这样来回*/
+}
+
+/*右侧头像？*/
+.rightInfor{
+	position: absolute;
+	top: 11rem;
+	right: 0;
+	width: 19rem;
+}
+
+.personInfor{
+	position: relative;
+}
+
+.personInfor img{
+	max-height: 8rem;
+}
+
+.personInfor span{
+	display: block;
+	float: right;
+	width: 10rem;
+	height: 8rem;
+}
+
+.personInfor ul{
+	list-style: none;
+	margin-top: 1rem;
+}
+
+.personInfor ul li:nth-child(odd){
+	font-size: 1.8rem;
+}
+
+.personInfor ul li:nth-child(even){
+	font-size: 2rem;
+	color: red;
+	text-indent: 2rem;
+}
+
+.personInfor a{
+	font-size: 1.4rem;
+	color: #FFB06C;
+	word-break:break-all;
+}
+
+.personInfor a:hover{
+	color: red;
+}
+
+.calendar{
+	border: 1px solid red;
+	margin-top: 2rem;
+}
+
