@@ -12,6 +12,10 @@ table, caption, tbody, tfoot, thead, tr, th, td{
 	/*border: 1px solid red;*/
 }
 
+article,aside,figure,figcaption,footer,header,main,nav,section,summary{
+	display: block;
+}
+
 a{
 	text-decoration: none;
 }
