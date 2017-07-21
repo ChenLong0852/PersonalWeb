@@ -1,6 +1,6 @@
 h1,h2,h3,h4,h5,h6,p,div,span,input,
 img,ul,li,ol,html,body,a,dl, dt, dd,
-header,main,footer,nav,section,address,button,
+header,main,footer,nav,section,address,button,figure,figcaption,
 table, caption, tbody, tfoot, thead, tr, th, td{
 	padding: 0;
 	margin: 0;
@@ -16,6 +16,8 @@ article,aside,figure,figcaption,footer,header,main,nav,section,summary{
 	display: block;
 }
 
+/*公有样式*/
+
 a{
 	text-decoration: none;
 }
@@ -24,8 +26,9 @@ a:hover{
 	color: #151515;
 }
 
-h2:hover{
-	color: #151515;
+.text{
+	font-size: 2rem;
+	text-indent: 2rem;
 }
 
 /*导入字体*/
@@ -37,10 +40,14 @@ h2:hover{
 	     url('FFF_Tusj-webfont.ttf') format('truetype'),
 	     url('FFF_Tusj-webfont.svg#webfont') format('svg');
 }
+/*字体结束*/
 
+/*logo样式*/
 .header>h1{
 	font-family: "ffftusj";
 }
+/*logo结束*/
+
 /*header开始*/
 header{
 	width: 100%;
@@ -66,43 +73,15 @@ header p{
 	text-align: right;
 	color: #4EB6EA;
 }
+/*header结束*/
 
 /*main部分*/
 main{
 	width: 70%;
 	margin: 0 auto;
-	border-radius: 1rem;
+	/*border-radius: 1rem;*/
 }
-
-main section{
-	height: 15rem;
-	margin-bottom: 3rem;
-	background: #E0DEDE;
-	border-radius: 1rem;
-	border:2px solid  #468EF9;
-	margin-left: -2rem;
-}
-
-main section h2{
-	line-height: 4rem;
-	height: 4rem;
-	font-size: 2.5rem;
-	text-indent: 3rem;
-	background: #4A6F5D;
-	color: #FFFFFF;
-	border-radius: 0.8rem 0.8rem 0 0;
-	font-weight: normal;
-}
-
-.text{
-	font-size: 2rem;
-	text-indent: 2rem;
-}
-
-.aboutThis{
-	margin-bottom: 0rem;
-}
-
+/*main结束*/
 
 /*固定导航*/
 .fixedNav{
@@ -130,6 +109,7 @@ main section h2{
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
+/*固定导航结束*/
 
 /*动态导航*/
 .dynamicNav{
@@ -165,6 +145,7 @@ main section h2{
 	        transform:rotateX(360deg);
 	/*3D X Y变化单个元素会出现盲区，在旋转过程中可能会使鼠标不在元素上而返回，而返回之后又触碰到鼠标而这样来回*/
 }
+/*动态导航结束*/
 
 /*右侧头像？*/
 .rightInfor{
@@ -213,9 +194,62 @@ main section h2{
 .personInfor a:hover{
 	color: red;
 }
+/*头像结束*/
 
+
+/*日历*/
 .calendar{
 	border: 1px solid red;
 	margin-top: 2rem;
 }
+/*日历结束*/
 
+/*公有结束*/
+/*-------------------------------------------------------------------------------*/
+
+/*index网页*/
+/*index main部分*/
+main section{
+	height: 15rem;
+	margin-bottom: 3rem;
+	background: #E0DEDE;
+	border-radius: 1rem;
+	border:2px solid  #468EF9;
+	margin-left: -2rem;
+}
+
+main section h2{
+	line-height: 4rem;
+	height: 4rem;
+	font-size: 2.5rem;
+	text-indent: 3rem;
+	background: #4A6F5D;
+	color: #FFFFFF;
+	border-radius: 0.8rem 0.8rem 0 0;
+	font-weight: normal;
+}
+
+main section h2:hover{
+	color: #151515;
+}
+
+.aboutThis{
+	margin-bottom: 0rem;
+}
+/*index main结束*/
+/*index结束*/
+
+/*person网页*/
+main{
+	background-color: #61BAEB;
+}
+
+.floatFigure{
+	border: 1px solid red;
+	float: left;
+}
+
+.floatFigure img{
+	max-width: 30rem;
+}
+/*person结束*/
